@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>持っていくものリスト</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>持っていくものリスト</h1>
+    <select id="listSelect" onchange="switchList()">
+        <option disabled selected>リストを選択</option>
+    </select>
+    <br>
+    <input type="text" id="newListName" placeholder="新しいリスト名">
+    <button onclick="createNewList()">新しいリストを作成</button>
+    <br>
+    <input type="text" id="itemInput" placeholder="新しいアイテムを追加">
+    <button onclick="addItem()">追加</button>
+    <button onclick="resetList()">リセット</button>
+    <ul id="itemList">
+    </ul>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
